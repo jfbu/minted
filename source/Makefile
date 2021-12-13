@@ -18,7 +18,7 @@ all: minted doc
 minted.sty: minted.ins minted.dtx
 	tex minted.ins
 
-minted.pdf: minted.sty minted.gls minted.dtx
+minted.pdf: minted.sty minted.dtx
 	$(LATEXMK) $(TEXFLAGS) minted.dtx
 
 minted.gls: minted.glo
